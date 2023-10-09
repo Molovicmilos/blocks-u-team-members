@@ -40,6 +40,23 @@ registerBlockType( 'blocks-u/team-member', {
 			selector: 'img',
 			attribute: 'src',
 		},
+		socialLinks: {
+			type: 'array',
+			default: [],
+			source: 'query',
+			selector: '.wp-block-blocks-u-team-member-social-links ul li',
+			query: {
+				icon: {
+					source: 'attribute',
+					attribute: 'data-icon',
+				},
+				link: {
+					source: 'attribute',
+					selector: 'a',
+					attribute: 'href',
+				},
+			},
+		},
 	},
 	/**
 	 * @see ./edit.js

@@ -40,7 +40,6 @@ export default function Edit( props ) {
 				template={ [
 					[ 'blocks-u/team-member' ],
 					[ 'blocks-u/team-member' ],
-					[ 'blocks-u/team-member' ],
 				] }
 			/>
 		</div>
