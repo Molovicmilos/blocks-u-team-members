@@ -1,17 +1,24 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/boilerplate",
+	"name": "blocks-u/team-members",
 	"version": "0.1.0",
-	"title": "Boilerplate",
-	"category": "widgets",
-	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"title": "Team members",
+	"category": "blocks-u",
+	"icon": "groups",
+	"description": "a team members grid",
 	"example": {},
+	"keywords": ["Team", "Members", "Grid"],
 	"supports": {
 		"html": false
 	},
-	"textdomain": "boilerplate",
+	"attributes": {
+		"columns": {
+			"type": "number",
+			"default": "2"
+		}
+	},
+	"textdomain": "team-members",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

@@ -1,16 +1,14 @@
 <?php
 /**
- * Plugin Name:       Boilerplate
- * Description:       Example block scaffolded with Create Block tool.
- * Requires at least: 6.1
+ * Plugin Name:       Team members 2
+ * Description:       A team members grid
  * Requires PHP:      7.0
- * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            Molke
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       boilerplate
+ * Text Domain:       team-members
  *
- * @package           create-block
+ * @package           blocks-u
  */
 
 /**
@@ -20,7 +18,15 @@
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_boilerplate_block_init() {
+
+add_filter( 'block_categories_all', function($categories) {
+		array_unshift($categories, [
+		'slug' => 'blocks-u',
+		'title' => 'Blocks U'
+	]);
+return $categories;
+} );
+function blocks_u_team_members_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'create_block_boilerplate_block_init' );
+add_action( 'init', 'blocks_u_team_members_block_init' );

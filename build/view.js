@@ -26,7 +26,7 @@ var __webpack_exports__ = {};
  */
 
 /* eslint-disable no-console */
-console.log('Hello World! (from create-block-boilerplate block)');
+console.log('Hello World! (from team members block)');
 /* eslint-enable no-console */
 /******/ })()
 ;
