@@ -13,6 +13,7 @@ registerBlockType( 'blocks-u/team-member', {
 		reusable: false,
 		html: false,
 	},
+	usesContext: [ 'blocks-u/team-members-columns' ],
 	attributes: {
 		name: {
 			type: 'string',

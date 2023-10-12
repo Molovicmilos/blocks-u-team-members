@@ -5546,6 +5546,7 @@ __webpack_require__.r(__webpack_exports__);
 function Edit({
   attributes,
   setAttributes,
+  context,
   noticeOperations,
   noticeUI,
   isSelected
@@ -5749,7 +5750,7 @@ function Edit({
     allowedTypes: ['image'],
     disableMediaButtons: url,
     notices: noticeUI
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, {
+  }), context['blocks-u/team-members-columns'], (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, {
     ref: tittleRef,
     placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Member Name', 'team-members'),
     tagName: "h4",
@@ -5839,6 +5840,7 @@ __webpack_require__.r(__webpack_exports__);
     reusable: false,
     html: false
   },
+  usesContext: ['blocks-u/team-members-columns'],
   attributes: {
     name: {
       type: 'string',
@@ -6142,7 +6144,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ (function(module) {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blocks-u/team-members","version":"0.1.0","title":"Team members","category":"blocks-u","icon":"groups","description":"a team members grid","keywords":["Team","Members","Grid"],"supports":{"html":false,"align":["wide","full"]},"attributes":{"columns":{"type":"number","default":"2"}},"example":{"attributes":{"columns":2},"innerBlocks":[{"name":"blocks-u/team-member","attributes":{"name":"John Doe","bio":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque nibh, tincidunt ut facilisis vitae, ullamcorper sit amet lectus. Proin porta vulputate purus.","url":"https://picsum.photos/id/1012/300/200","socialLinks":[{"icon":"facebook"},{"icon":"twitter"},{"icon":"instagram"}]}},{"name":"blocks-u/team-member","attributes":{"name":"Jane Doe","bio":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque nibh, tincidunt ut facilisis vitae, ullamcorper sit amet lectus. Proin porta vulputate purus.","url":"https://picsum.photos/id/1011/300/200","socialLinks":[{"icon":"facebook"},{"icon":"twitter"},{"icon":"instagram"}]}}]},"textdomain":"team-members","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blocks-u/team-members","version":"0.1.0","title":"Team members","category":"blocks-u","icon":"groups","description":"a team members grid","keywords":["Team","Members","Grid"],"supports":{"html":false,"align":["wide","full"]},"attributes":{"columns":{"type":"number","default":"2"}},"example":{"attributes":{"columns":2},"innerBlocks":[{"name":"blocks-u/team-member","attributes":{"name":"John Doe","bio":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque nibh, tincidunt ut facilisis vitae, ullamcorper sit amet lectus. Proin porta vulputate purus.","url":"https://picsum.photos/id/1012/300/200","socialLinks":[{"icon":"facebook"},{"icon":"twitter"},{"icon":"instagram"}]}},{"name":"blocks-u/team-member","attributes":{"name":"Jane Doe","bio":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque nibh, tincidunt ut facilisis vitae, ullamcorper sit amet lectus. Proin porta vulputate purus.","url":"https://picsum.photos/id/1011/300/200","socialLinks":[{"icon":"facebook"},{"icon":"twitter"},{"icon":"instagram"}]}}]},"textdomain":"team-members","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","providesContext":{"blocks-u/team-members-columns":"columns"}}');
 
 /***/ })
 
